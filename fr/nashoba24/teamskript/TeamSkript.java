@@ -90,7 +90,7 @@ public class TeamSkript extends JavaPlugin {
 		   Skript.registerExpression(ExprTSIPSList.class, Client.class, ExpressionType.PROPERTY, "(teamspeak|ts[3])[ client[s]] correspond[ing][s] to ip %string%", "(teamspeak|ts[3]) ip[s] correspond[ing][s] to %string%");
 		   Skript.registerExpression(ExprTSNickname.class, String.class, ExpressionType.PROPERTY, "(teamspeak|ts[3]) (nickname|nick|name) of %client%");
 		   Skript.registerExpression(ExprTSClients.class, Client.class, ExpressionType.PROPERTY, "(teamspeak|ts[3]) client[s] (online[s]|connect[ed])");
-		   /*Skript.registerEvent("ts3 client leave", SimpleEvent.class, TsClientLeaveEvent.class, "(teamspeak|ts[3])[ client] (leave|quit)");
+		   Skript.registerEvent("ts3 client leave", SimpleEvent.class, TsClientLeaveEvent.class, "(teamspeak|ts[3])[ client] (leave|quit)");
 		   EventValues.registerEventValue(TsClientLeaveEvent.class, String.class, new Getter<String, TsClientLeaveEvent>() {
 			   public String get(TsClientLeaveEvent e) {
 				   return e.getInvoker();
@@ -101,7 +101,7 @@ public class TeamSkript extends JavaPlugin {
 			   public String get(TsClientJoinEvent e) {
 				   return e.getInvoker();
 			   }
-		   }, 0);*/
+		   }, 0);
 	}
 	
 	  public static TeamSkript getInstance() {
